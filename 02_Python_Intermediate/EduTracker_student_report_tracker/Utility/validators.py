@@ -1,18 +1,17 @@
-class  validation:
-    def validate_mark(value):
+def validate_mark(value):
         if 0 < value >= 100:
-            print("mark is valid")
+            return True
         else:
-            print("mark is invald")
+            return False
 
-    def validate_name(value):
+def validate_name(value):
         if value.istitle():
-            print("This is Valid name")
+            return True
         else:
-            print("This is not a valid name")
+            return False
         
-    def validate_roll(value):
+def validate_roll(value):
         if isinstance(value, int):
-            print("Entred roll no is Valid")
+            return True
         else:
-            print("Invalid Roll no")
+            return False

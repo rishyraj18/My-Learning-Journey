@@ -52,6 +52,9 @@ class student(GradingSystem):
 
     def __lt__(self,other):
         return self.__mark > other.__mark
+    
+    def view_names(self):
+        print(f"{self.__name}")
 
     def __str__(self):
         return (f"Student name: {self.__name}\nRoll No: {self.__roll_no}\nCourse :{self.__course}\nMark scored: {self.__mark}\nAttendance: {self.__attendance}")
