@@ -11,7 +11,7 @@ class weapon(ABC):
         return (self._damage, self._Energy_Cost)
 
 class Laser_Weapon(weapon):
-    def __init__(self, name, damage = 100, Energy_Cost = 25):
+    def __init__(self, name, damage = 250, Energy_Cost = 25):
         super().__init__(name, damage, Energy_Cost)
 
     def fire(self):
@@ -20,7 +20,7 @@ class Laser_Weapon(weapon):
     def see_my_weapon(self):
             print(f"{self.__class__.__name__}")
 class Plasma_Weapon(weapon):
-    def __init__(self, name, damage = 120, Energy_Cost = 40):
+    def __init__(self, name, damage = 240, Energy_Cost = 40):
         super().__init__(name, damage, Energy_Cost)
 
     def fire(self):

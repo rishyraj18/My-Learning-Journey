@@ -25,10 +25,13 @@ class Baseship(ABC):
         self.take_damage(other)
 
     def recharge_shield(self):
-        pass
+        print(f"rechargeing Shield for {self._player_name}")
+        self._shield = min(self._shield + (self._shield /10), 750)
+
+
 
 class FighterShip(Baseship):
-    def __init__(self, Player_name, health = 1000, shield = 500, power= 100):
+    def __init__(self, Player_name, health = 1000, shield = 750, power= 100):
         super().__init__(Player_name, health, shield, power)
         print(f"{self._player_name} Player created\nHealth: {self._health}\nShield Strenght: {self._shield}\nFire Power: {self._power}" )
 
