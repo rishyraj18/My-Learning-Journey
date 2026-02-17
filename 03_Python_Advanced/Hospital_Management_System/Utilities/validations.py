@@ -7,8 +7,6 @@ from Patients.patient import patients_obj
 from Employees.Employees import emp_obj
 from Accounting.Accounting import treatments
 
-
-
 def patient_id_validation(P_id):
     if P_id in patients_obj.keys():
         pass
